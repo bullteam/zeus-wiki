@@ -19,10 +19,10 @@
       :items="sidebarItems"
       @toggle-sidebar="toggleSidebar"
     >
-      <slot
+      <!-- <slot
         name="sidebar-top"
         slot="top"
-      />
+      /> -->
       <slot
         name="sidebar-bottom"
         slot="bottom"

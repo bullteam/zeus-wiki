@@ -53,7 +53,7 @@ module.exports = {
             },
           ],
           sidebar: {
-            '/guide/': genSidebarConfig('Guide')
+            '/guide/': genSidebarConfig('指南')
           }
         },
       }
@@ -68,13 +68,8 @@ module.exports = {
         children: [
           '',
           'getting-started',
-          'basic-config',
-        //   'assets',
-        //   'markdown',
-        //   'using-vue',
-        //   'custom-themes',
-        //   'i18n',
-        //   'deploy'
+          'user',
+          'sys',
         ]
       }
     ]

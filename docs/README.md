@@ -17,7 +17,7 @@ footer: MIT Licensed | Copyright © 2019-present 公牛开源联盟
 
 ### 快速部署
 ::: warning 注意
-请确保你的环境已经安装docker & docker composer
+请确保你的环境已经安装docker & docker composer 并且按照[github官方的教程](https://help.github.com/en/articles/connecting-to-github-with-ssh)设置SSH
 :::
 ``` bash
 # 生成目录
