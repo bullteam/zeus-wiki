@@ -23,6 +23,9 @@ module.exports = {
       ['meta', { name: 'msapplication-TileImage', content: '/icons/msapplication-icon-144x144.png' }],
       ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
+    markdown: {
+      lineNumbers: true // 代码块显示行号
+    },
     serviceWorker: true,
     theme: 'vue',
     themeConfig: {
@@ -48,12 +51,17 @@ module.exports = {
               link: '/guide/',
             },
             {
+              text: '开发文档',
+              link: '/api/',
+            },
+            {
               text: '官网',
               link: 'http://www.bullteam.cn'
             },
           ],
           sidebar: {
-            '/guide/': genSidebarConfig('指南')
+            '/guide/': genSidebarConfig('指南'),
+            '/api/': genSidebarApiConfig('开发文档')
           }
         },
       }
@@ -70,6 +78,19 @@ module.exports = {
           'getting-started',
           'user',
           'sys',
+        ]
+      }
+    ]
+  }
+
+  function genSidebarApiConfig (title) {
+    return [
+      {
+        title,
+        collapsable: false,
+        children: [
+          '',
+          'user',
         ]
       }
     ]
