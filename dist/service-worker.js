@@ -21,6 +21,7 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
+<<<<<<< HEAD:dist/service-worker.js
     "revision": "d6630e59aa87aa863a3d1730de3b10e8"
   },
   {
@@ -30,6 +31,17 @@ self.__precacheManifest = [
   {
     "url": "api/user.html",
     "revision": "5d124b32032bd8d9f4a74086bf109c55"
+=======
+    "revision": "6b68f0c254a34717018770da6b16713f"
+  },
+  {
+    "url": "api/index.html",
+    "revision": "65e8b8940a355ddcadcc795338153ccc"
+  },
+  {
+    "url": "api/user.html",
+    "revision": "6bf9de13d857040dd07c8d67dfb69eac"
+>>>>>>> 增加规范:Zeus/service-worker.js
   },
   {
     "url": "assets/css/0.styles.240434d1.css",
@@ -76,8 +88,13 @@ self.__precacheManifest = [
     "revision": "416388f4f9261ba93a56756507c9ed8c"
   },
   {
+<<<<<<< HEAD:dist/service-worker.js
     "url": "assets/js/app.13df217f.js",
     "revision": "10f26426cb0c005baf06bcf0cc9bff17"
+=======
+    "url": "assets/js/app.92ba9deb.js",
+    "revision": "5113690267deb64d23f181c59d694f9d"
+>>>>>>> 增加规范:Zeus/service-worker.js
   },
   {
     "url": "bull.png",
@@ -145,6 +162,7 @@ self.__precacheManifest = [
   },
   {
     "url": "guide/getting-started.html",
+<<<<<<< HEAD:dist/service-worker.js
     "revision": "204fddda80124e51061a4b8cb9cb0ed9"
   },
   {
@@ -158,6 +176,21 @@ self.__precacheManifest = [
   {
     "url": "guide/user.html",
     "revision": "103de4cf66d86d6ccc6d878de1e963ef"
+=======
+    "revision": "386e9c97f9efa84e04646d1a2b427fdf"
+  },
+  {
+    "url": "guide/index.html",
+    "revision": "94afc9218c3b7bcd52b7261cced59bf0"
+  },
+  {
+    "url": "guide/sys.html",
+    "revision": "55003854ae2e89756050523be677c28f"
+  },
+  {
+    "url": "guide/user.html",
+    "revision": "6fff4090a4e2dc71768f90383f0101af"
+>>>>>>> 增加规范:Zeus/service-worker.js
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -213,7 +246,11 @@ self.__precacheManifest = [
   },
   {
     "url": "index.html",
+<<<<<<< HEAD:dist/service-worker.js
     "revision": "011a3be78d4d60e0489f3b34d67b6f06"
+=======
+    "revision": "1817b90b1ca2fa9060b0c717bacddb4e"
+>>>>>>> 增加规范:Zeus/service-worker.js
   },
   {
     "url": "logo.png",

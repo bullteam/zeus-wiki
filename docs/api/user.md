@@ -4,7 +4,7 @@
 
 `接口描述` : `用户注册接口,返回用户注册的后的状态`
 
-`请求路径` :  `/user/add`
+`请求路径` :  `/users`
 
 `请求方法` :  `POST`
 
@@ -15,7 +15,7 @@ Authorization: Bearer + token
 ```
 
 `请求参数` : 参数类型 `body`
-| key        | value           | type  | desc | required | 
+| 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:| :---------:| :------:|
 | username   | 展示      | String | 用户名 | true |
 | password   | password |   String | 密码 | true |
@@ -58,7 +58,7 @@ Authorization: Bearer + token
 
 `接口描述` : `用户登陆接口,返回用户的基本信息和登陆后的 token `
 
-`请求路径` :  `/user/login`
+`请求路径` :  `/users/login`
 
 `请求方法` :  `POST`
 
@@ -68,7 +68,7 @@ Content-Type: application/json
 ```
 
 `请求参数` : 参数类型 `body`
-| key        | value           | type  | desc | required | 
+| 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:| :--------: |
 | username   | test      | String | 用户名 | true |
 | password   | password |   String | 密码 | true |
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 `接口描述` : `请求用户列表, 用到登陆接口返回的 token 进行认证 `
 
-`请求路径` :  `/user/:page`
+`请求路径` :  `/users`
 
 `请求方法` :  `GET`
 
@@ -113,15 +113,17 @@ Authorization: Bearer  token
 ```
 
 `请求参数` : 参数类型 `params`
-| key        | value           | type  | desc |  required|
+| 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
-| q   | d=1      | String | 查询条件 |  true |
-| start   | 1      | String | 起始页 |  true |
-| limit   | 20      | String | 记录数 |  true |
+| limit   | 20      | String | 指定返回记录的数量 |  true |
+| offset   | 10     | String | 指定返回记录的开始位置 |  true |
+| page   | 1      | String | 指定第几页 |  true |
+| per_page   | 30      | String | 每页的记录数 |  true |
+
 
 示例：
 ```js
-/api/user/list/1
+/api/users?limit=20&offset=10&page=2&per_page=30
 ```
 
 `响应数据` : 
@@ -197,7 +199,7 @@ Authorization: Bearer  token
 
 `接口描述` : `根据用户id查询用户信息 `
 
-`请求路径` :  `/user/show`
+`请求路径` :  `/users/<ID>`
 
 `请求方法` :  `GET`
 
@@ -207,13 +209,13 @@ Authorization: Bearer  token
 ```
 
 `请求参数` : 参数类型 `query`
-| key        | value           | type  | desc |  required|
+| 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
 | id   | 1      | Int | 用户id |  true |
 
 示例：
 ```js
-/user/show?id=123
+/user/123
 ```
 
 `响应数据` : 
