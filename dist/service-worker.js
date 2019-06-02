@@ -21,38 +21,26 @@ importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.4.1/workbox
 self.__precacheManifest = [
   {
     "url": "404.html",
-<<<<<<< HEAD:dist/service-worker.js
-    "revision": "d6630e59aa87aa863a3d1730de3b10e8"
+    "revision": "c693b5a448d5a87656b96a421eeff719"
   },
   {
     "url": "api/index.html",
-    "revision": "1ce36e2e323fa0599106ce4b0764dc3c"
+    "revision": "29351be0325ed3ef102ca379245be0a2"
   },
   {
     "url": "api/user.html",
-    "revision": "5d124b32032bd8d9f4a74086bf109c55"
-=======
-    "revision": "6b68f0c254a34717018770da6b16713f"
+    "revision": "3e8b6b99abc486f6928f26a5ee179b4c"
   },
   {
-    "url": "api/index.html",
-    "revision": "65e8b8940a355ddcadcc795338153ccc"
+    "url": "assets/css/0.styles.78c169a6.css",
+    "revision": "a868e11d2d3ae0362ac19b90d0213a2c"
   },
   {
-    "url": "api/user.html",
-    "revision": "6bf9de13d857040dd07c8d67dfb69eac"
->>>>>>> 增加规范:Zeus/service-worker.js
+    "url": "assets/img/search.83621669.svg",
+    "revision": "83621669651b9a3d4bf64d1a670ad856"
   },
   {
-    "url": "assets/css/0.styles.240434d1.css",
-    "revision": "40bf5a3121cc780e4509f566b150ed27"
-  },
-  {
-    "url": "assets/img/search.683d46b0.svg",
-    "revision": "683d46b01e3fc6c712c2036bea239951"
-  },
-  {
-    "url": "assets/js/10.6a44b4ff.js",
+    "url": "assets/js/10.5534ee02.js",
     "revision": "8efcce3e6b3daf84303823f3cef8924d"
   },
   {
@@ -60,41 +48,36 @@ self.__precacheManifest = [
     "revision": "ed338bb33461b3b1595f6d0fdff4994d"
   },
   {
-    "url": "assets/js/3.745bf053.js",
-    "revision": "4f56ac4d33d36c2366566d80109949d3"
+    "url": "assets/js/3.7e25aa92.js",
+    "revision": "717f5f4e20d85b55ac73710df88a072c"
   },
   {
-    "url": "assets/js/4.fc889266.js",
+    "url": "assets/js/4.3f43c6af.js",
     "revision": "f53b17aaef8d0ddb30aeb36163f20d8c"
   },
   {
-    "url": "assets/js/5.7e0fd5f0.js",
-    "revision": "0bed308889a66aa7dcdf146162d1a1a7"
+    "url": "assets/js/5.91368289.js",
+    "revision": "8db44969d06aacfbf04bcaca1786d5e0"
   },
   {
-    "url": "assets/js/6.9ed042f9.js",
-    "revision": "c1744c5e11015501034728f2535f0b50"
+    "url": "assets/js/6.73775b0e.js",
+    "revision": "59f403ef9df7c7d453b61160a761031e"
   },
   {
-    "url": "assets/js/7.89a56dd2.js",
+    "url": "assets/js/7.dd840a7b.js",
     "revision": "785aca3bd710800f15ea207f53c29fe0"
   },
   {
-    "url": "assets/js/8.8f4b3d2f.js",
+    "url": "assets/js/8.bc98ae3c.js",
     "revision": "7cbeb4bd195bb52b547fd9670aca553f"
   },
   {
-    "url": "assets/js/9.57656763.js",
+    "url": "assets/js/9.c30665ee.js",
     "revision": "416388f4f9261ba93a56756507c9ed8c"
   },
   {
-<<<<<<< HEAD:dist/service-worker.js
-    "url": "assets/js/app.13df217f.js",
-    "revision": "10f26426cb0c005baf06bcf0cc9bff17"
-=======
-    "url": "assets/js/app.92ba9deb.js",
-    "revision": "5113690267deb64d23f181c59d694f9d"
->>>>>>> 增加规范:Zeus/service-worker.js
+    "url": "assets/js/app.f97f2ebb.js",
+    "revision": "6d013b8a00e199e44f0595c699dfdeaf"
   },
   {
     "url": "bull.png",
@@ -162,35 +145,19 @@ self.__precacheManifest = [
   },
   {
     "url": "guide/getting-started.html",
-<<<<<<< HEAD:dist/service-worker.js
-    "revision": "204fddda80124e51061a4b8cb9cb0ed9"
+    "revision": "a68dbca8ddf289184c82c13a460a5b97"
   },
   {
     "url": "guide/index.html",
-    "revision": "0e3a141b7a12d57c4abcd9befbee7fdc"
+    "revision": "4f5598c6703bcdad4ef841f0d18dd240"
   },
   {
     "url": "guide/sys.html",
-    "revision": "432922a563dd24a3723be35ac0486fb4"
+    "revision": "9dda318b035d57b13143ba3afb46db49"
   },
   {
     "url": "guide/user.html",
-    "revision": "103de4cf66d86d6ccc6d878de1e963ef"
-=======
-    "revision": "386e9c97f9efa84e04646d1a2b427fdf"
-  },
-  {
-    "url": "guide/index.html",
-    "revision": "94afc9218c3b7bcd52b7261cced59bf0"
-  },
-  {
-    "url": "guide/sys.html",
-    "revision": "55003854ae2e89756050523be677c28f"
-  },
-  {
-    "url": "guide/user.html",
-    "revision": "6fff4090a4e2dc71768f90383f0101af"
->>>>>>> 增加规范:Zeus/service-worker.js
+    "revision": "c39ebf4d8be42af7ac3f049f7beb09d3"
   },
   {
     "url": "icons/android-chrome-192x192.png",
@@ -242,15 +209,11 @@ self.__precacheManifest = [
   },
   {
     "url": "icons/safari-pinned-tab.svg",
-    "revision": "f78c0251d6ddd56ee219a1830ded71b4"
+    "revision": "f22d501a35a87d9f21701cb031f6ea17"
   },
   {
     "url": "index.html",
-<<<<<<< HEAD:dist/service-worker.js
-    "revision": "011a3be78d4d60e0489f3b34d67b6f06"
-=======
-    "revision": "1817b90b1ca2fa9060b0c717bacddb4e"
->>>>>>> 增加规范:Zeus/service-worker.js
+    "revision": "53729874b65bb9490ce161f372a6a231"
   },
   {
     "url": "logo.png",
