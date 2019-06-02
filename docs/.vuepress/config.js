@@ -1,7 +1,7 @@
 module.exports = {
     dest: './dist',
     locales: {
-      '/doc': {
+      '/': {
         lang: 'en-US',
         title: 'Zeus',
         description: 'Zeus 宙斯权限系统'
@@ -34,7 +34,7 @@ module.exports = {
       docsDir: 'docs',
       docsBranch: '0.x',
       locales: {
-        '/doc': {
+        '/': {
           label: '简体中文',
           selectText: '选择语言',
           editLinkText: '在 GitHub 上编辑此页',
@@ -48,11 +48,11 @@ module.exports = {
           nav: [
             {
               text: '指南',
-              link: './guide/',
+              link: '/guide/',
             },
             {
               text: '开发文档',
-              link: './api/',
+              link: '/api/',
             },
             {
               text: '官网',
@@ -60,8 +60,8 @@ module.exports = {
             },
           ],
           sidebar: {
-            './guide/': genSidebarConfig('指南'),
-            './api/': genSidebarApiConfig('开发文档')
+            '/guide/': genSidebarConfig('指南'),
+            '/api/': genSidebarApiConfig('开发文档')
           }
         },
       }
