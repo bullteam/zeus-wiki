@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>功能权限</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.3d288760.css" as="style"><link rel="preload" href="/assets/js/app.0bd70f9a.js" as="script"><link rel="preload" href="/assets/js/12.97ac3f82.js" as="script"><link rel="prefetch" href="/assets/js/10.30184acd.js"><link rel="prefetch" href="/assets/js/11.a756e4b3.js"><link rel="prefetch" href="/assets/js/13.d3181324.js"><link rel="prefetch" href="/assets/js/14.f70baabe.js"><link rel="prefetch" href="/assets/js/15.0e59f8f6.js"><link rel="prefetch" href="/assets/js/16.c64f1332.js"><link rel="prefetch" href="/assets/js/17.37790dd6.js"><link rel="prefetch" href="/assets/js/18.78fd2efa.js"><link rel="prefetch" href="/assets/js/19.52990fe8.js"><link rel="prefetch" href="/assets/js/2.6f1fb0b5.js"><link rel="prefetch" href="/assets/js/3.fd616ae2.js"><link rel="prefetch" href="/assets/js/4.f2d63f6a.js"><link rel="prefetch" href="/assets/js/5.d4a35829.js"><link rel="prefetch" href="/assets/js/6.7c84396f.js"><link rel="prefetch" href="/assets/js/7.221cd92c.js"><link rel="prefetch" href="/assets/js/8.f100d3d1.js"><link rel="prefetch" href="/assets/js/9.33112782.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.3d288760.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <!----> </div> <div class="page"> <div class="content"><h1 id="功能权限"><a href="#功能权限" aria-hidden="true" class="header-anchor">#</a> 功能权限</h1> <h2 id="登录用户权限列表"><a href="#登录用户权限列表" aria-hidden="true" class="header-anchor">#</a> 登录用户权限列表</h2> <p><code>接口描述</code> : <code>登录用户权限列表</code></p> <p><code>请求路径</code> :  <code>/perms</code></p> <p><code>请求方法</code> :  <code>GET</code></p> <p><code>请求头</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>Authorization: Bearer  token
+</code></pre></div><p><code>响应数据</code> :</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;data&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;data_perms&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;info&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2&quot;</span><span class="token punctuation">,</span>
+            <span class="token property">&quot;username&quot;</span><span class="token operator">:</span> <span class="token string">&quot;admin&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;result&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;success&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="检查权限"><a href="#检查权限" aria-hidden="true" class="header-anchor">#</a> 检查权限</h2> <p><code>接口描述</code> : <code>检查权限接口</code></p> <p><code>请求路径</code> :  <code>/perms/check</code></p> <p><code>请求方法</code> :  <code>GET</code></p> <p><code>请求头</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>Authorization: Bearer  token
+</code></pre></div><p><code>响应数据</code> :</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+    <span class="token property">&quot;code&quot;</span><span class="token operator">:</span> <span class="token number">10013</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;langkey&quot;</span><span class="token operator">:</span> <span class="token string">&quot;err.ErrPermission&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;msg&quot;</span><span class="token operator">:</span> <span class="token string">&quot;没有权限&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;moreinfo&quot;</span><span class="token operator">:</span> <span class="token string">&quot;fail // &quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <!----> </div> <!----></div></div>
+    <script src="/assets/js/app.0bd70f9a.js" defer></script><script src="/assets/js/12.97ac3f82.js" defer></script>
+  </body>
+</html>
