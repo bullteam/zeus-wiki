@@ -5,7 +5,7 @@
 
 `接口描述` : `项目列表`
 
-`请求路径` :  ``
+`请求路径` :  `/domains`
 
 `请求方法` :  `GET`
 
@@ -18,12 +18,13 @@ Authorization: Bearer + token
 `请求参数` : 参数类型 `params`
 | 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
-
+| page   | 1      | String | 指定第几页 |  true |
+| per_page   | 30      | String | 每页的记录数 |  true |
 
 
 示例：
 ```js
-
+/domains?page=2&per_page=30
 ```
 
 `响应数据` : 
@@ -41,7 +42,7 @@ Authorization: Bearer + token
 
 `接口描述` : `项目详情`
 
-`请求路径` :  ``
+`请求路径` :  `/domains/<ID>`
 
 `请求方法` :  `GET`
 
@@ -59,7 +60,7 @@ Authorization: Bearer + token
 
 示例：
 ```js
-
+/domains/1
 ```
 
 `响应数据` : 
@@ -77,7 +78,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加项目`
 
-`请求路径` :  ``
+`请求路径` :  `/domains`
 
 `请求方法` :  `POST`
 
@@ -90,13 +91,10 @@ Authorization: Bearer + token
 `请求参数` : 参数类型 `params`
 | 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
+|name | 1 | String | 名称 | true|
+|callbackurl | 1 | String | 跳转地址 | true|
+|remark | test | String | 备注 | true|
 
-
-
-示例：
-```js
-
-```
 
 `响应数据` : 
 ```json
@@ -126,13 +124,10 @@ Authorization: Bearer + token
 `请求参数` : 参数类型 `params`
 | 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
+|name | 1 | String | 名称 | true|
+|callbackurl | 1 | String | 跳转地址 | true|
+|remark | test | String | 备注 | true|
 
-
-
-示例：
-```js
-
-```
 
 `响应数据` : 
 ```json

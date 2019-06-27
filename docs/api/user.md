@@ -115,15 +115,13 @@ Authorization: Bearer  token
 `请求参数` : 参数类型 `params`
 | 参数        | 值           | 类型  | 说明 | 必须 | 
 |:----------:|:---------:|:-----:|  :---------:|:----: |
-| limit   | 20      | String | 指定返回记录的数量 |  true |
-| offset   | 10     | String | 指定返回记录的开始位置 |  true |
 | page   | 1      | String | 指定第几页 |  true |
 | per_page   | 30      | String | 每页的记录数 |  true |
 
 
 示例：
 ```js
-/api/users?limit=20&offset=10&page=2&per_page=30
+/users?page=2&per_page=30
 ```
 
 `响应数据` : 
