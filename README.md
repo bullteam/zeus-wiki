@@ -4,13 +4,13 @@
 yarn
 yarn dev  # serves zeus doc' own docs with itself
 yarn test # make sure your code change pass the test
-```
-```
-# 开始写作
-vuepress dev .
+yarn build
+
+# or 开始写作
+vuepress dev docs
 
 # 构建静态文件
-vuepress build .
+vuepress build docs
 ```
 ## License
 

@@ -91,6 +91,13 @@ module.exports = {
         children: [
           '',
           'user',
+          'role',
+          'menu',
+          'domain',
+          'dept',
+          'data',
+          'perm',
+          'account'
         ]
       }
     ]

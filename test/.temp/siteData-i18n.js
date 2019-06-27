@@ -4,7 +4,7 @@ export const siteData = {
   "base": "/",
   "pages": [
     {
-      "key": "v-ef3b132bb6393",
+      "key": "v-e425752651d78",
       "path": "/",
       "lastUpdated": 1560957487000,
       "title": "Home",
@@ -40,7 +40,7 @@ export const siteData = {
       }
     },
     {
-      "key": "v-644325db3a4d1",
+      "key": "v-45eade18d7d39",
       "path": "/api/",
       "lastUpdated": 1560957487000,
       "title": "接口文档",
@@ -118,49 +118,7 @@ export const siteData = {
       ]
     },
     {
-      "key": "v-341c6f84785d8",
-      "path": "/api/account.html",
-      "lastUpdated": null,
-      "title": "个人帐户"
-    },
-    {
-      "key": "v-5fcaa929e346a",
-      "path": "/api/data.html",
-      "lastUpdated": null,
-      "title": "数据权限"
-    },
-    {
-      "key": "v-f426e1770c006",
-      "path": "/api/dept.html",
-      "lastUpdated": null,
-      "title": "组织架构"
-    },
-    {
-      "key": "v-457b56e077c7",
-      "path": "/api/domain.html",
-      "lastUpdated": null,
-      "title": "应用管理"
-    },
-    {
-      "key": "v-4bda71fcdf2de",
-      "path": "/api/menu.html",
-      "lastUpdated": null,
-      "title": "菜单"
-    },
-    {
-      "key": "v-ebe60e2a8e99f",
-      "path": "/api/perm.html",
-      "lastUpdated": null,
-      "title": "功能权限"
-    },
-    {
-      "key": "v-b1bc721f1789b",
-      "path": "/api/role.html",
-      "lastUpdated": null,
-      "title": "角色"
-    },
-    {
-      "key": "v-200614ccfbe9e",
+      "key": "v-5f1b71f700da4",
       "path": "/api/user.html",
       "lastUpdated": 1560957487000,
       "title": "用户模块",
@@ -188,7 +146,7 @@ export const siteData = {
       ]
     },
     {
-      "key": "v-1fd57d288278",
+      "key": "v-52a7858c0e73d",
       "path": "/guide/",
       "lastUpdated": 1560957487000,
       "title": "文档简介",
@@ -211,7 +169,7 @@ export const siteData = {
       ]
     },
     {
-      "key": "v-df6311bc64a24",
+      "key": "v-0d687817d75fc",
       "path": "/guide/getting-started.html",
       "lastUpdated": 1560957487000,
       "title": "首页",
@@ -224,7 +182,7 @@ export const siteData = {
       ]
     },
     {
-      "key": "v-28d698ac473cf",
+      "key": "v-59e478c00ede2",
       "path": "/guide/sys.html",
       "lastUpdated": 1560957487000,
       "title": "系统设置",
@@ -287,7 +245,7 @@ export const siteData = {
       ]
     },
     {
-      "key": "v-a903dec68b2a8",
+      "key": "v-05a20b6e93d2c",
       "path": "/guide/user.html",
       "lastUpdated": 1560957487000,
       "title": "权限管理",
@@ -390,14 +348,7 @@ export const siteData = {
               "collapsable": false,
               "children": [
                 "",
-                "user",
-                "role",
-                "menu",
-                "domain",
-                "dept",
-                "data",
-                "perm",
-                "account"
+                "user"
               ]
             }
           ]
