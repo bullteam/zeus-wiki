@@ -5,7 +5,7 @@
 
 `接口描述` : `登录用户权限列表`
 
-`请求路径` :  `/perms`
+`请求路径` :  `/v1/perms`
 
 `请求方法` :  `GET`
 
@@ -34,7 +34,7 @@ Authorization: Bearer  token
 
 `接口描述` : `检查权限`
 
-`请求路径` :  `/perms/check`
+`请求路径` :  `/v1/perms/check`
 
 `请求方法` :  `GET`
 

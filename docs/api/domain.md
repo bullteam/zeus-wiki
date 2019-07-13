@@ -5,7 +5,7 @@
 
 `接口描述` : `项目列表`
 
-`请求路径` :  `/domains`
+`请求路径` :  `/v1/domains`
 
 `请求方法` :  `GET`
 
@@ -42,7 +42,7 @@ Authorization: Bearer + token
 
 `接口描述` : `项目详情`
 
-`请求路径` :  `/domains/<ID>`
+`请求路径` :  `/v1/domains/<ID>`
 
 `请求方法` :  `GET`
 
@@ -78,7 +78,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加项目`
 
-`请求路径` :  `/domains`
+`请求路径` :  `/v1/domains`
 
 `请求方法` :  `POST`
 
@@ -145,7 +145,7 @@ Authorization: Bearer + token
 `接口描述` : `删除项目`
 
 
-`请求路径` :  `/domains/<ID>`
+`请求路径` :  `/v1/domains/<ID>`
 
 `请求方法` :  `DELETE`
 

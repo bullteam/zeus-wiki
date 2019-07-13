@@ -4,7 +4,7 @@
 
 `接口描述` : `菜单列表`
 
-`请求路径` :  `/menus`
+`请求路径` :  `/v1/menus`
 
 `请求方法` :  `GET`
 
@@ -62,7 +62,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加菜单`
 
-`请求路径` :  `/menus`
+`请求路径` :  `/v1/menus`
 
 `请求方法` :  `POST`
 
@@ -113,7 +113,7 @@ order_num:0
 
 `接口描述` : `编辑菜单`
 
-`请求路径` :  `/menus/<ID>`
+`请求路径` :  `/v1/menus/<ID>`
 
 `请求方法` :  `PUT`
 
@@ -152,7 +152,7 @@ Authorization: Bearer + token
 `接口描述` : `删除菜单`
 
 
-`请求路径` :  `/menus/<ID>`
+`请求路径` :  `/v1/menus/<ID>`
 
 `请求方法` :  `DELETE`
 

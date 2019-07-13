@@ -4,7 +4,7 @@
 
 `接口描述` : `用户注册接口,返回用户注册的后的状态`
 
-`请求路径` :  `/users`
+`请求路径` :  `/v1/users`
 
 `请求方法` :  `POST`
 
@@ -58,7 +58,7 @@ Authorization: Bearer + token
 
 `接口描述` : `用户登陆接口,返回用户的基本信息和登陆后的 token `
 
-`请求路径` :  `/users/login`
+`请求路径` :  `/v1/users/login`
 
 `请求方法` :  `POST`
 
@@ -103,7 +103,7 @@ Content-Type: application/json
 
 `接口描述` : `请求用户列表, 用到登陆接口返回的 token 进行认证 `
 
-`请求路径` :  `/users`
+`请求路径` :  `/v1/users`
 
 `请求方法` :  `GET`
 
@@ -197,7 +197,7 @@ Authorization: Bearer  token
 
 `接口描述` : `根据用户id查询用户信息 `
 
-`请求路径` :  `/users/<ID>`
+`请求路径` :  `/v1/users/<ID>`
 
 `请求方法` :  `GET`
 
@@ -252,7 +252,7 @@ Authorization: Bearer  token
 
 `接口描述` : `删除用户`
 
-`请求路径` :  `/users/<ID>`
+`请求路径` :  `/v1/users/<ID>`
 
 `请求方法` :  `DELETE`
 
@@ -277,7 +277,7 @@ Authorization: Bearer + token
 
 `接口描述` : `刷新令牌`
 
-`请求路径` :  `/users/refresh-token`
+`请求路径` :  `/v1/users/refresh-token`
 
 `请求方法` :  `POST`
 
@@ -367,7 +367,7 @@ Authorization: Bearer + token
 
 `接口描述` : `编辑用户信息`
 
-`请求路径` :  `/users/<ID>`
+`请求路径` :  `/v1/users/<ID>`
 
 `请求方法` :  `PUT`
 
@@ -421,7 +421,7 @@ Authorization: Bearer  token
 
 `接口描述` : `更改用户状态`
 
-`请求路径` :  `/users/status/<ID>`
+`请求路径` :  `/v1/users/<ID>/status`
 
 `请求方法` :  `PATCH`
 
@@ -460,7 +460,7 @@ Authorization: Bearer + token
 
 `接口描述` : `用户更改自己的密码`
 
-`请求路径` :  `/users/password`
+`请求路径` :  `/v1/account/password`
 
 `请求方法` :  `PATCH`
 
@@ -490,7 +490,7 @@ Authorization: Bearer + token
 
 `接口描述` : `管理员重置用户的密码`
 
-`请求路径` :  `/users/password/<ID>`
+`请求路径` :  `/v1/users/<ID>/password`
 
 `请求方法` :  `PATCH`
 
@@ -525,7 +525,7 @@ Authorization: Bearer  token
 
 `接口描述` : `用户关联的项目域`
 
-`请求路径` :  `/users/domain`
+`请求路径` :  `/v1/users/domain`
 
 `请求方法` :  `GET`
 
@@ -555,7 +555,7 @@ Authorization: Bearer + token
 
 `接口描述` : `获取验证码`
 
-`请求路径` :  `/captcha/request`
+`请求路径` :  `/v1/captcha/request`
 
 `请求方法` :  `GET`
 
@@ -586,7 +586,7 @@ Authorization: Bearer + token
 
 `接口描述` : `用户转到新部门`
 
-`请求路径` :  `/users/move-department`
+`请求路径` :  `/v1/users/move-department`
 
 `请求方法` :  `PATCH`
 

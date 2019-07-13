@@ -4,7 +4,7 @@
 
 `接口描述` : `部门列表`
 
-`请求路径` :  `/depts`
+`请求路径` :  `/v1/depts`
 
 `请求方法` :  `GET`
 
@@ -35,7 +35,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加部门`
 
-`请求路径` :  `/depts`
+`请求路径` :  `/v1/depts`
 
 `请求方法` :  `POST`
 
@@ -67,7 +67,7 @@ Authorization: Bearer + token
 
 `接口描述` : `修改部门`
 
-`请求路径` :  `/depts/<ID>`
+`请求路径` :  `/v1/depts/<ID>`
 
 `请求方法` :  `GET`
 
@@ -99,7 +99,7 @@ Authorization: Bearer + token
 
 `接口描述` : `删除部门`
 
-`请求路径` :  `/depts/<ID>`
+`请求路径` :  `/v1/depts/<ID>`
 
 `请求方法` :  `DELETE`
 
@@ -124,7 +124,7 @@ Authorization: Bearer + token
 
 `接口描述` : `检查部门是否有成员`
 
-`请求路径` :  `/depts/check-no-member`
+`请求路径` :  `/v1/depts/check-no-member`
 
 `请求方法` :  `POST`
 
@@ -155,7 +155,7 @@ Authorization: Bearer + token
 
 `接口描述` : `部门详情`
 
-`请求路径` :  `/depts/<ID>`
+`请求路径` :  `/v1/depts/<ID>`
 
 `请求方法` :  `GET`
 

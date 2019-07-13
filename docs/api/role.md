@@ -5,7 +5,7 @@
 
 `接口描述` : `角色列表`
 
-`请求路径` :  `/roles`
+`请求路径` :  `/v1/roles`
 
 `请求方法` :  `GET`
 
@@ -98,7 +98,7 @@ Authorization: Bearer + token
 
 `接口描述` : `角色详情`
 
-`请求路径` :  `/roles/<ID>`
+`请求路径` :  `/v1/roles/<ID>`
 
 `请求方法` :  `GET`
 
@@ -160,7 +160,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加角色`
 
-`请求路径` :  `/roles`
+`请求路径` :  `/v1/roles`
 
 `请求方法` :  `POST`
 
@@ -197,7 +197,7 @@ Authorization: Bearer + token
 
 `接口描述` : `编辑角色`
 
-`请求路径` :  `/roles/<ID>`
+`请求路径` :  `/v1/roles/<ID>`
 
 `请求方法` :  `PUT`
 
@@ -234,7 +234,7 @@ Authorization: Bearer + token
 
 `接口描述` : `角色权限分配`
 
-`请求路径` :  `/roles/<ID>`
+`请求路径` :  `/v1/roles/<ID>`
 
 `请求方法` :  `PATCH`
 
@@ -267,7 +267,7 @@ Authorization: Bearer + token
 
 `接口描述` : `删除角色`
 
-`请求路径` :  `/roles/<ID>`
+`请求路径` :  `/v1/roles/<ID>`
 
 `请求方法` :  `DELETE`
 

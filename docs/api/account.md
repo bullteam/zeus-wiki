@@ -3,7 +3,7 @@
 
 `接口描述` : `解除第三方绑定`
 
-`请求路径` :  `/account/unbind`
+`请求路径` :  `/v1/account/unbind`
 
 `请求方法` :  `GET`
 
@@ -33,7 +33,7 @@ Authorization: Bearer + token
 
 `接口描述` : `安全设置`
 
-`请求路径` :  `/account/security`
+`请求路径` :  `/v1/account/security`
 
 `请求方法` :  `PUT`
 
@@ -63,7 +63,7 @@ Authorization: Bearer + token
 
 `接口描述` : `校验验证码`
 
-`请求路径` :  `/account/bindcode`
+`请求路径` :  `/v1/account/bindcode`
 
 `请求方法` :  `GET`
 
@@ -93,7 +93,7 @@ Authorization: Bearer + token
 
 `接口描述` : `第三方绑定账号列表`
 
-`请求路径` :  `/account/third`
+`请求路径` :  `/v1/account/third`
 
 `请求方法` :  `GET`
 
@@ -121,7 +121,7 @@ Authorization: Bearer + token
 
 `接口描述` : `验证邮箱地址`
 
-`请求路径` :  `/account/verifymail`
+`请求路径` :  `/v1/account/verifymail`
 
 `请求方法` :  `POST`
 
@@ -156,7 +156,7 @@ Authorization: Bearer + token
 
 `接口描述` : `绑定第三方`
 
-`请求路径` :  `/account/bind`
+`请求路径` :  `/v1/account/bind`
 
 `请求方法` :  `GET`
 

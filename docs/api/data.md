@@ -4,7 +4,7 @@
 
 `接口描述` : `数据权限列表`
 
-`请求路径` :  `/datas`
+`请求路径` :  `/v1/datas`
 
 `请求方法` :  `GET`
 
@@ -35,7 +35,7 @@ Authorization: Bearer + token
 
 `接口描述` : `数据权限详情`
 
-`请求路径` :  `/datas/<ID>`
+`请求路径` :  `/v1/datas/<ID>`
 
 `请求方法` :  `GET`
 
@@ -60,7 +60,7 @@ Authorization: Bearer + token
 
 `接口描述` : `添加数据权限`
 
-`请求路径` :  `/datas`
+`请求路径` :  `/v1/datas`
 
 `请求方法` :  `POST`
 
@@ -77,7 +77,7 @@ Authorization: Bearer + token
 |parent_id | 0 | int | 父ID 0 为顶级 | true |
 |name | 订单列表1 | string | 名称 | true  |
 |perms | /orders/orders/getlist | string |数据权限key 建议用uri路由规则命名 | true |
-|perms_rule |{"rules":[{"field":"country_id","op":"equal","value":"2328926"}],"op":"and"} |string | 数据权限规则json | true|
+|perms_rule | {"rules":[{"field":"country_id","op":"equal","value":"2328926"}],"op":"and"} | string | 数据权限规则json | true|
 |perms_type| 1 |int |类型 1=分类 2=数据权限| true|
 |order_num |1 |int |排序 |false|
 |remarks | 这是说明 |string |备注说明 | false|
@@ -97,7 +97,7 @@ Authorization: Bearer + token
 
 `接口描述` : `修改数据权限`
 
-`请求路径` :  `/datas/<ID>`
+`请求路径` :  `/v1/datas/<ID>`
 
 `请求方法` :  `PUT`
 
@@ -134,7 +134,7 @@ Authorization: Bearer + token
 
 `接口描述` : `删除数据权限`
 
-`请求路径` :  `/datas/<ID>`
+`请求路径` :  `/v1/datas/<ID>`
 
 `请求方法` :  `DELETE`
 
