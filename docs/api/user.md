@@ -632,7 +632,7 @@ Authorization: Bearer + token
 
 `接口描述` : `获取用户权限列表`
 
-`请求路径` :  `/users/perms`
+`请求路径` :  `/v1/users/perms`
 
 `请求方法` :  `GET`
 
@@ -665,7 +665,7 @@ Authorization: Bearer + token
 
 `接口描述` : `第三方登陆（钉钉）`
 
-`请求路径` :  `/users/login-dingtalk`
+`请求路径` :  `/v1/users/login-dingtalk`
 
 `请求方法` :  `GET`
 
