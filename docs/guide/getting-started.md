@@ -1,4 +1,4 @@
-# 首页
+# 使用
 
 > 首页展示的内容 是 当前用户 有登陆权限的系统.
 
@@ -16,7 +16,3 @@ Firefox V50 or later
 IE V10 or later
 
 Safari 10.0 or later
-
-## 架构
-
-![图片](/guide/arch.png)

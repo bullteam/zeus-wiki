@@ -75,6 +75,9 @@ module.exports = {
         collapsable: false,
         children: [
           '',
+          'install',
+          'config',
+          'architecture',
           'getting-started',
           'user',
           'sys',

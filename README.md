@@ -1,4 +1,4 @@
-#zeus 宙斯权限系统文档
+# zeus 宙斯权限系统文档
 
 ``` bash
 yarn
