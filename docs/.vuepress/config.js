@@ -78,6 +78,7 @@ module.exports = {
           'install',
           'config',
           'architecture',
+          'ldap',
           'getting-started',
           'user',
           'sys',
