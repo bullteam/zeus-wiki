@@ -79,6 +79,7 @@ module.exports = {
           'config',
           'architecture',
           'ldap',
+          'develop',
           'getting-started',
           'user',
           'sys',

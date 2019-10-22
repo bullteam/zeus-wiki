@@ -17,7 +17,7 @@ sudo mkdir -p /var/lib/zeus
 docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus:latest
 ```
 然后 容器已经运行成功，在浏览器中访问 http://hostname:8082 就可以看到界面了。
-注意：目前端口改为非8082时，需要修改配置文件 `LOCAL_ROOT_URL = http://localhost:8082/`。
+注意：目前端口改为非8082时，需要修改配置文件.
 
 
 ## 从二进制安装
