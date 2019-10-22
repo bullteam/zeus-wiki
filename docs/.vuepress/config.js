@@ -80,9 +80,7 @@ module.exports = {
           'architecture',
           'ldap',
           'develop',
-          'getting-started',
-          'user',
-          'sys',
+          'user'
         ]
       }
     ]

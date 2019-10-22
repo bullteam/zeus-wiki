@@ -14,4 +14,4 @@ vuepress build docs
 ```
 ## License
 
-[MIT](https://github.com/bullteam/zeus-wiki/blob/master/LICENSE)
+[MIT](https://github.com/bullteam/zeus-admin/blob/master/LICENSE)
