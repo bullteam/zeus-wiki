@@ -2,7 +2,7 @@
 
 ## 从Docker安装
 
-阅读本章之前我们已经假设您对docker已经有了解并能够正常使用docker。如果还是不熟悉，请参考[9102 年了，学点 Docker 知识](https://juejin.im/post/5c2c69cee51d450d9707236e)
+阅读本章之前我们已经假设您对docker已经有了解并能够正常使用docker。如果还是不熟悉，请参考[9102 年了，学点 Docker 知识](https://juejin.im/post/5c2c69cee51d450d9707236e) [设置dockerhub 加速代理](https://juejin.im/post/5cd2cf01f265da0374189441)
 
 我们在 Docker Hub 的 Bullteam 组织中提供了自动更新的 Docker 镜像，它会保持最新的稳定版。你也可以用其它 Docker 服务来更新。首先你需要pull镜像：
 ```bash
@@ -72,3 +72,18 @@ $ cd ./zeus-admin
 $ ./zeus server
 ```
 如果您没有发现任何错误信息，则可以使用 Ctrl-C 来终止运行。
+
+## Windows 安装
+
+> 注意：由于引进了sqlite 数据库，windows 上编译会报GCC缺失的错误，需要安装 [tdm-gcc](http://tdm-gcc.tdragon.net/download) 选择对应的版本即可。
+
+Windows golang 安装请参考 [go windows 安装](https://www.jianshu.com/p/602c9ed4847d)
+
+```bash
+cd D:\XXX\zeus-admin
+go build -o zeus.exe
+cd pkg/webui
+npm install
+npm run build:work
+zeus.exe server
+```
