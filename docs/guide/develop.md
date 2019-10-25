@@ -32,8 +32,8 @@ $ yarn run build // build 前端
 ### Docker
 本地直接Docker启动，请参考以下命令
 
-$ docker pull bullteam/zeus:latest
-$ docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus:latest
+$ docker pull bullteam/zeus-admin:latest
+$ docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
 启动成功后浏览器输入 localhost:8082 就可以开始使用Zeus了。
 
 ### kubernetes
@@ -79,6 +79,8 @@ Golang 代码使用 goimports 和 gofmt 进行代码格式化
 
 
 ## 发布流程
+
+
 
 ## PR递交说明
 

@@ -1,6 +1,6 @@
 ---
 home: true
-title: Zeus
+title: Zeus 
 heroImage: /logo.png
 actionText: 快速上手 →
 actionLink: /guide/
@@ -14,3 +14,14 @@ features:
   details: 公牛开源组织以非营利性为目的，MIT许可协议开源。
 footer: MIT Licensed | Copyright © 2019-present 公牛开源联盟
 ---
+### 快速部署
+
+```bash
+docker pull bullteam/zeus-admin:latest
+
+sudo mkdir -p /var/lib/zeus
+
+docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
+
+```
+访问 http://localhost:8082 ,账号`admin` 和 密码 `123456`

@@ -6,7 +6,7 @@
 
 我们在 Docker Hub 的 Bullteam 组织中提供了自动更新的 Docker 镜像，它会保持最新的稳定版。你也可以用其它 Docker 服务来更新。首先你需要pull镜像：
 ```bash
-docker pull bullteam/zeus:latest
+docker pull bullteam/zeus-admin:latest
 ```
 如果要将数据持久化，你需要创建一个目录来作为数据存储的地方：
 ```bash
@@ -14,13 +14,15 @@ sudo mkdir -p /var/lib/zeus
 ```
 然后就可以运行 docker 容器了，这很简单。 当然你需要定义端口数数据目录：
 ```bash
-docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus:latest
+docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
 ```
 然后 容器已经运行成功，在浏览器中访问 http://hostname:8082 就可以看到界面了。
 注意：目前端口改为非8082时，需要修改配置文件.
 
 
 ## 从二进制安装
+
+> 暂时未提供二进制安装方式
 
 所有下载均包括 SQLite, MySQL 的支持。 基于二进制的安装非常简单，只要从 [下载页面](https://gitee.com/bullteam/zeus-admin/attach_files) 下载文件，拷贝下载URL，执行以下命令即可（以Linux为例）：
 
@@ -51,7 +53,7 @@ $ go get -u github.com/bullteam/zeus-admin
 $ cd ./zeus-admin
 $ go build -o zeus
 $ cd ./zeus-admin/pkg/webui
-$ npm run build:prod
+$ npm run build:prod  // 如果启动的是前后端一起启动的，请使用 npm run build:work 命令编译
 ```
 构建 develop 分支版本
 如果您想要安装 develop（或其它）分支版本，则可以通过以下命令：

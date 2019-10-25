@@ -15,7 +15,7 @@
   <meta name="msapplication-TileImage" content="./icons/msapplication-icon-144x144.png">
   <meta name="msapplication-TileColor" content="#000000">
     
-    <link rel="preload" href="/assets/css/0.styles.205cab44.css" as="style"><link rel="preload" href="/assets/js/app.b65c069b.js" as="script"><link rel="preload" href="/assets/js/16.313c7d7b.js" as="script"><link rel="prefetch" href="/assets/js/10.b0297320.js"><link rel="prefetch" href="/assets/js/11.5f5a2e91.js"><link rel="prefetch" href="/assets/js/12.9ad6d99a.js"><link rel="prefetch" href="/assets/js/13.649192e7.js"><link rel="prefetch" href="/assets/js/14.de7ce9dd.js"><link rel="prefetch" href="/assets/js/15.7ad2ec20.js"><link rel="prefetch" href="/assets/js/17.c45beeab.js"><link rel="prefetch" href="/assets/js/18.f91b52cf.js"><link rel="prefetch" href="/assets/js/19.1b484bdf.js"><link rel="prefetch" href="/assets/js/2.3ed537a1.js"><link rel="prefetch" href="/assets/js/20.68e8f666.js"><link rel="prefetch" href="/assets/js/3.8309bc15.js"><link rel="prefetch" href="/assets/js/4.bb7c6003.js"><link rel="prefetch" href="/assets/js/5.27d7445f.js"><link rel="prefetch" href="/assets/js/6.05fed661.js"><link rel="prefetch" href="/assets/js/7.d2863b4f.js"><link rel="prefetch" href="/assets/js/8.89ae276e.js"><link rel="prefetch" href="/assets/js/9.8e169cd0.js">
+    <link rel="preload" href="/assets/css/0.styles.205cab44.css" as="style"><link rel="preload" href="/assets/js/app.88200f76.js" as="script"><link rel="preload" href="/assets/js/16.f6a47285.js" as="script"><link rel="prefetch" href="/assets/js/10.b0297320.js"><link rel="prefetch" href="/assets/js/11.5f5a2e91.js"><link rel="prefetch" href="/assets/js/12.9ad6d99a.js"><link rel="prefetch" href="/assets/js/13.649192e7.js"><link rel="prefetch" href="/assets/js/14.de7ce9dd.js"><link rel="prefetch" href="/assets/js/15.7ad2ec20.js"><link rel="prefetch" href="/assets/js/17.e0b82a16.js"><link rel="prefetch" href="/assets/js/18.f91b52cf.js"><link rel="prefetch" href="/assets/js/19.1b484bdf.js"><link rel="prefetch" href="/assets/js/2.3ed537a1.js"><link rel="prefetch" href="/assets/js/20.68e8f666.js"><link rel="prefetch" href="/assets/js/3.6f157c2f.js"><link rel="prefetch" href="/assets/js/4.bb7c6003.js"><link rel="prefetch" href="/assets/js/5.27d7445f.js"><link rel="prefetch" href="/assets/js/6.05fed661.js"><link rel="prefetch" href="/assets/js/7.d2863b4f.js"><link rel="prefetch" href="/assets/js/8.89ae276e.js"><link rel="prefetch" href="/assets/js/9.8e169cd0.js">
     <link rel="stylesheet" href="/assets/css/0.styles.205cab44.css">
   </head>
   <body>
@@ -34,8 +34,8 @@
 $ <span class="token function">yarn</span> <span class="token function">install</span> // 安装依赖
 $ <span class="token function">yarn</span> run dev // 启动前端
 $ <span class="token function">yarn</span> run build // build 前端
-</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="docker"><a href="#docker" aria-hidden="true" class="header-anchor">#</a> Docker</h3> <p>本地直接Docker启动，请参考以下命令</p> <p>$ docker pull bullteam/zeus:latest
-$ docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus:latest
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="docker"><a href="#docker" aria-hidden="true" class="header-anchor">#</a> Docker</h3> <p>本地直接Docker启动，请参考以下命令</p> <p>$ docker pull bullteam/zeus-admin:latest
+$ docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
 启动成功后浏览器输入 localhost:8082 就可以开始使用Zeus了。</p> <h3 id="kubernetes"><a href="#kubernetes" aria-hidden="true" class="header-anchor">#</a> kubernetes</h3> <p>建议将与Zeus相关的服务独立到一个专有的 Namespace下，您可以执行以下命令创建该空间</p> <div class="language-bash line-numbers-mode"><pre class="language-bash"><code>$ kubectl create namespace zeus
 </code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br></div></div><h3 id="docker-compose"><a href="#docker-compose" aria-hidden="true" class="header-anchor">#</a> docker-compose</h3> <p>配置文件调整好后执行以下命令直接启动：</p> <p>$ cd install/docker-compose/
 $ docker-compose up</p> <h2 id="代码规范"><a href="#代码规范" aria-hidden="true" class="header-anchor">#</a> 代码规范</h2> <h3 id="目录结构"><a href="#目录结构" aria-hidden="true" class="header-anchor">#</a> 目录结构</h3> <h4 id="代码规范-2"><a href="#代码规范-2" aria-hidden="true" class="header-anchor">#</a> 代码规范</h4> <p>格式化代码
@@ -50,6 +50,6 @@ Golang 代码使用 goimports 和 gofmt 进行代码格式化</p> <h4 id="命名
         </a>
         →
       </span></p></div> <div class="bsa-cpc-wrapper"><div class="bsa-cpc"></div></div></div> <!----></div></div>
-    <script src="/assets/js/app.b65c069b.js" defer></script><script src="/assets/js/16.313c7d7b.js" defer></script>
+    <script src="/assets/js/app.88200f76.js" defer></script><script src="/assets/js/16.f6a47285.js" defer></script>
   </body>
 </html>
