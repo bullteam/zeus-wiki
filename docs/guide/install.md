@@ -14,7 +14,7 @@ sudo mkdir -p /var/lib/zeus
 ```
 然后就可以运行 docker 容器了，这很简单。 当然你需要定义端口数数据目录：
 ```bash
-docker run -d --name=zeus -p 8082:80 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
+docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
 ```
 然后 容器已经运行成功，在浏览器中访问 http://hostname:8082 就可以看到界面了。
 注意：目前端口改为非8082时，需要修改配置文件.
@@ -24,17 +24,18 @@ docker run -d --name=zeus -p 8082:80 -v /var/lib/zeus:/data bullteam/zeus-admin:
 
 > 暂时未提供二进制安装方式
 
-所有下载均包括 SQLite, MySQL 的支持。 基于二进制的安装非常简单，只要从 [下载页面](https://gitee.com/bullteam/zeus-admin/attach_files) 下载文件：
+所有下载均包括 SQLite, MySQL 的支持。 基于二进制的安装非常简单，只要从 [下载页面](https://gitee.com/bullteam/zeus-admin/attach_files) 下载文件，拷贝下载URL，执行以下命令即可（以Linux为例）：
 
-步骤：
-1.下载解压包manifest.tar.gz并解压
-2.导入init.sql文件到mysql
-3.config/in-local.yaml 修改数据库设置
-4.执行如下文件即可运行：
 ```bash
-./run.sh
+chmod +x zeus
 ```
+测试
+在执行了以上步骤之后，你将会获得 zeus 的二进制文件，在你复制到部署的机器之前可以先测试一下。在命令行执行完后，你可以 Ctrl + C 关掉程序。
 
+```bash
+./zeus server -c ./config/in-local.yaml -p 8082
+```
+`-c` 后面指定的是配置文件地址，`-p` 指定的是端口号
 ## 从源代码安装
 
 ### 安装依赖
@@ -54,14 +55,13 @@ $ go build -o zeus
 $ cd ./zeus-admin/pkg/webui
 $ npm run build:prod  // 如果启动的是前后端一起启动的，请使用 npm run build:work 命令编译
 ```
-
-#### 构建 develop 分支版本
+构建 develop 分支版本
 如果您想要安装 develop（或其它）分支版本，则可以通过以下命令：
 
 
 > 请确保没有使用 “https://github.com/bullteam/zeus-admin.git”
 ```bash
-$ git clone --depth=1 -b develop https://github.com/bullteam/zeus-admin.git
+$ git clone --depth=1 -b develop https://github.com/bullteam/zeus-amdin
 $ cd ./zeus-admin
 $ go build -o zeus
 $ cd ./zeus-admin/pkg/webui

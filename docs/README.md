@@ -21,7 +21,7 @@ docker pull bullteam/zeus-admin:latest
 
 sudo mkdir -p /var/lib/zeus
 
-docker run -d --name=zeus -p 8082:80 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
+docker run -d --name=zeus -p 8082:8082 -v /var/lib/zeus:/data bullteam/zeus-admin:latest
 
 ```
 访问 http://localhost:8082 ,账号`admin` 和 密码 `123456`
