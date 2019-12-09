@@ -27,7 +27,7 @@ module.exports = {
       lineNumbers: true // 代码块显示行号
     },
     serviceWorker: true,
-    theme: 'vue',
+    // theme: 'vue',
     themeConfig: {
       repo: 'bullteam/zeus',
       editLinks: true,
@@ -80,7 +80,8 @@ module.exports = {
           'architecture',
           'ldap',
           'develop',
-          'user'
+          'user',
+          'data'
         ]
       }
     ]
